@@ -1,0 +1,143 @@
+1).A : MCQ's Section:
+
+1)Point out the correct declarations?
+Option:
+	1	final abstract class Test {}
+	2	public static interface Test {}
+	3	final public class Test {}
+	4	protected abstract class Test {}
+	5	protected interface Test {}
+	6	abstract public class Test {}
+  Answer: 3 and 6
+
+2)Point out the correct true statements about comparing two instances of the same class, given that the equals() and hashCode() methods have been properly overridden?
+Option:	
+        1	If the equals() method returns true, the hashCode() comparison == must return true.
+	2	If the equals() method returns false, the hashCode() comparison != must return true.
+	3	If the hashCode() comparison == returns true, the equals() method must return true.
+	4	If the hashCode() comparison == returns true, the equals() method might return true.
+  Answer: 1 and 4
+
+3)Find out the result in the given options?
+public class Company 
+{
+    public static void main (String [] args) 
+    {
+        class Org
+        {
+            public String name; 
+            public Org(String s) 
+            {
+                name = s;
+            }
+        } 
+        
+        Object obj = new Org("NTTDATA"); 
+        Org ref = (Org) obj; 
+        System.out.println(ref.name);
+    }
+} 
+
+Options:
+a)An exception occurs 
+b)It prints NTTDATA
+c)Compilation fails 
+Answer:b
+ 
+4)Output of the program?
+class Two 
+{
+    byte x;
+}
+
+class PassO 
+{
+    public static void main(String [] args) 
+    {
+        PassO p = new PassO();
+        p.start();
+    }
+
+    void start() 
+    {
+        Two t = new Two();
+        System.out.print(t.x + " ");
+        Two t2 = fix(t);
+        System.out.println(t.x + " " + t2.x);
+    }
+
+    Two fix(Two tt) 
+    {
+        tt.x = 1;
+        return tt;
+    }
+}
+
+Options:
+a)null null 1
+b)0 0 1
+c)0 1 1
+d)0 0 0
+Answer:c
+
+5) Output of the program?
+try 
+{ 
+    int x = 0; 
+    int y = 5 / x; 
+} 
+catch (Exception e) 
+{
+    System.out.println("Exception"); 
+} 
+catch (ArithmeticException ae) 
+{
+    System.out.println("Arithmetic Exception"); 
+} 
+System.out.println("finish");
+
+Options:
+a)finish
+b)Exception
+c)Compilation fails.	
+d)Arithmetic Exception
+Answer:C
+
+1.B: Topics section:
+
+1.For the below topics provide the real time usage and sample code peice?
+Polymorphism
+Inheritance
+Modifiers
+Abstraction
+Throw and Throws
+
+
+1.C: Problem solving:
+
+1. Create a method that will replace all repeating characters with a given character. Method signature will be replaceRepeating(String, char). 
+For example, if I invoke replaceRepeating(“yourname”, ‘*’),  The Repeated charactor should be replaced with *
+
+2. There is a book object which has name, id and price. I have a collection of book objects. I need to add one more object to the collection. 
+Before adding it, I need to check if the book I am trying to add doesn’t already available in the collection. 
+If the id and name of the book I am try to add to the collection matches with any of the books in the collection, it indicates it should not be added.
+
+3.In the given string: Excute the result based on the input and the expected result?
+
+Input: NttDataDevTeam
+Result:
+String1 =Nt
+String2 =Da
+String3 =aDev
+
+Solving: When ever charactor t exists break down and store before charactors to the string.
+
+
+
+
+
+
+
+	
+
+

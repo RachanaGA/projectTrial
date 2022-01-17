@@ -1,0 +1,83 @@
+Polymorphism
+It is the ability of an object to take multiple forms. It allows us to perform same action in multiple ways.
+There are 2 types of polymorphism- compile time and run-time polymorphism.
+Method overloading is compile time and method overriding is run-time.
+Real time example would be myself(human), I can be a daughter/sister in my house, an employee in a company.
+
+class Employee{
+ public void knownAs() {
+ System.out.println("Employee");
+ }
+}
+
+class Manager extends Employee {
+  public void knownAs(){
+  System.out.println("Manager");
+ }
+}
+
+class Developer extends Employee {
+  public void knownAs(){
+  System.out.println("Developer");
+ }
+}
+
+class Main
+{ public static void main(String[] args){
+   Employee e = new Manager();
+   e.knownAs();
+   e= new Developer();
+   e.knownAs();
+ }
+}
+
+--------------------------------------------------
+Inheritance
+It is a concept where a class inherits a properties of another class.
+If father is a super class and chlid is the sub class, some properties of father can be acquired by child.
+
+class Vehicle{
+ public void door(){
+ 
+ }
+}
+
+class Car extends Vehicle{
+ // Door method of parent will be available in this class
+}  
+----------------------------------------------------
+Modifiers
+It will specify the accessibility of field/method/constructor class by applying access modifier on it.
+ATM Machine, the methods visible to us like withdraw deposit are all public methods. The balance in the atm is private.
+
+public class Sample{
+}
+
+protected class Sample{
+}
+-----------------------------------------------------
+Abstraction 
+It is a way in which only essential details are displayed. We can achieve this using abstract and interface.
+In ATM machine, the withdraw and deposit funtions are visible but the actual operation of what happens in the background is hidden.
+
+public sample{
+ public abstract something(){
+} 
+}
+-----------------------------------------------
+Throw and Throws
+
+Throw is used to explicitly throw an exception, method or a block of code.
+Whereas throws is used on a method to deligate the exception.
+
+Throw - voting system that will throw custom exception if age is less than 18.
+Throws - In call centre is a person will not be able to handle the issue the person will deligate the issue/concern to the manager.
+
+throw new ArithmeticException("/ by zero");
+
+public void Sample throws Exception //This exception should be handled by the caller method
+ {
+ FileWriter file = newFileWriter("C:\\sample.txt");
+ file.write(" ");
+ file.close();
+}
